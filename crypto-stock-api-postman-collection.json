@@ -1,0 +1,63 @@
+{
+    "info": {
+        "name": "Crypto-Stock API Collection",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_postman_id": "crypto-stock-api"
+    },
+    "item": [
+        {
+            "name": "Get Crypto Price",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/api/crypto/:ticker",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "api",
+                        "crypto",
+                        ":ticker"
+                    ],
+                    "variable": [
+                        {
+                            "key": "ticker",
+                            "value": "bitcoin",
+                            "description": "Crypto ticker symbol (e.g., bitcoin)"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Stock Price",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/api/stock/:ticker",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "api",
+                        "stock",
+                        ":ticker"
+                    ],
+                    "variable": [
+                        {
+                            "key": "ticker",
+                            "value": "AAPL",
+                            "description": "Stock ticker symbol (e.g., AAPL)"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
